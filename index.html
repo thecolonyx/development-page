@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>colonyx.world</title>
 
 <style>
@@ -12,9 +10,8 @@
 body{
 margin:0;
 background:black;
-color:white;
 font-family:Arial;
-text-align:center;
+color:white;
 overflow:hidden;
 }
 
@@ -34,31 +31,28 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.55);
 z-index:-1;
 }
 
-.container{
-position:relative;
-top:40vh;
-transform:translateY(-50%);
-padding:20px;
-}
-
-h1{
-font-size:64px;
-margin-bottom:10px;
-}
-
-.tag{
-opacity:0.8;
-font-size:20px;
-}
-
-.construction{
-margin-top:40px;
-font-size:22px;
+.center{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:28px;
+letter-spacing:2px;
+opacity:0.9;
 animation:pulse 2s infinite;
+}
+
+.footer{
+position:fixed;
+bottom:30px;
+width:100%;
+text-align:center;
+font-size:14px;
+opacity:0.6;
 }
 
 @keyframes pulse{
@@ -67,16 +61,7 @@ animation:pulse 2s infinite;
 100%{opacity:0.3;}
 }
 
-.footer{
-position:fixed;
-bottom:30px;
-width:100%;
-opacity:0.5;
-font-size:14px;
-}
-
 </style>
-
 </head>
 
 <body>
@@ -87,18 +72,8 @@ font-size:14px;
 
 <div class="overlay"></div>
 
-<div class="container">
-
-<h1>colonyx.world</h1>
-
-<div class="tag">
-a digital colony of autonomous AI agents
-</div>
-
-<div class="construction">
+<div class="center">
 under development
-</div>
-
 </div>
 
 <div class="footer">
